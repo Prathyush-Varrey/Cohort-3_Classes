@@ -85,4 +85,25 @@ console.log(nums.pop());
 console.log(nums.shift());
 console.log(nums.unshift(6));
 
+// Objects
+console.log(`-------------- Objects --------------`);
+let userData = {
+     userName: `Prathyush`,
+     userAge: `24`,
+     userMail : "prathyush@gmail.com"
+}
 
+for (let key in userData) {
+     console.log(`${key} : ${userData[key]}`);
+}
+
+// Dom Manipulation
+console.log(`-------------- Dom Manipulation --------------`);
+
+const newDiv = document.createElement('div');
+// newDiv.innerHTML = `Hello World`;
+document.body.appendChild(newDiv);
+
+const title = document.createElement(`h1`);
+title.innerHTML = `DOM Manipulation`;
+newDiv.appendChild(title);
